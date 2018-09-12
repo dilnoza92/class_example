@@ -7,9 +7,10 @@ import pytest
 
 from click.testing import CliRunner
 
-from example import example
+#from example import example
 from example import cli
 
+from example import *
 
 @pytest.fixture
 def response():
@@ -36,3 +37,5 @@ def test_command_line_interface():
     help_result = runner.invoke(cli.main, ['--help'])
     assert help_result.exit_code == 0
     assert '--help  Show this message and exit.' in help_result.output
+def test_create_graph(self):
+    assert create_graph(np.ones(10),np.ones(10),'hehe')=='hehe.png'
