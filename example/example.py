@@ -9,4 +9,4 @@ def create_graph(array1,array2,name):
     output="{}.png".format(name)
     plt.savefig(output)
     return output
-print create_graph(arr1,arr2,'yusuf')
+answer= create_graph(arr1,arr2,'yusuf')
